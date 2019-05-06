@@ -35,6 +35,7 @@ public class ProductActivity extends AppCompatActivity {
       setViewText(R.id.product_volume, "Volume", String.valueOf(product.volume()));
       setViewText(R.id.product_alcohol, "Alcohol", String.valueOf(product.alcohol()));
       setViewText(R.id.product_price, "Price", String.valueOf(product.price()));
+      setViewText(R.id.name_input, "Name", String.valueOf(product.name()));
     }
 
   }

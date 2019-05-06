@@ -42,4 +42,14 @@
     android:layout_marginRight="4dp"
     android:layout_marginBottom="4dp"
     android:hint="maximum price, e g 19" />
+  <EditText
+      android:id="@+id/name_input"
+      android:inputType="text"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:layout_marginLeft="4dp"
+      android:layout_marginRight="4dp"
+      android:layout_marginBottom="4dp"
+      android:hint="product name, e g Mariestad" />
 </LinearLayout>
