@@ -154,6 +154,7 @@ public class SecondActivity extends AppCompatActivity {
         addToMap(arguments, MIN_PRICE, valueFromView(viewInflated, R.id.min_price_input));
         addToMap(arguments, MAX_PRICE, valueFromView(viewInflated, R.id.max_price_input));
 
+
         // Given the map, s earch for products and update the listview
         searchProducts(arguments);
       }
@@ -224,8 +225,9 @@ public class SecondActivity extends AppCompatActivity {
         double alcohol = row.getDouble("alcohol");
         double price = row.getDouble("price");
         int volume = row.getInt("volume");
+        String productGroup = row.getString("product_group");
 
-        Product m = new Product(name, alcohol, price, volume);
+        Product m = new Product(name, alcohol, price, volume, productGroup);
         productList .add(m);
         Log.d(LOG_TAG, " * " + m);
       } catch (JSONException e) {

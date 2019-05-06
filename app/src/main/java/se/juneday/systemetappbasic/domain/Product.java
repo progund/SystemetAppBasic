@@ -113,11 +113,12 @@ package se.juneday.systemetappbasic.domain;
      * @param price The price of this Product (in SEK)
      * @param volume The volume (in millilitres) of this product
      */
-    public Product(String name, double alcohol, double price, int volume) {
+    public Product(String name, double alcohol, double price, int volume, String productGroup) {
       this.name = name;
       this.alcohol = alcohol;
       this.price = price;
       this.volume = volume;
+      this.productGroup = productGroup;
     }
 
     /**
