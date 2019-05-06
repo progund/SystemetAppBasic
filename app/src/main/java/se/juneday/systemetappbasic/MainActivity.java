@@ -8,6 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     private Button Button2;
+    private Button button1;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -16,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         Button2 = (Button) findViewById(R.id.button2);
+        button1 = (Button) findViewById(R.id.button1);
+
 
     }
 
@@ -31,6 +34,17 @@ public class MainActivity extends AppCompatActivity {
                 if (((Button) v).isClickable()) {
                     setContentView(R.layout.second_activity);
                     Intent i = new Intent(MainActivity.this, SecondActivity.class);
+                    startActivity(i);
+                }
+            }
+        });
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (((Button) v).isClickable()) {
+                    setContentView(R.layout.third_activity);
+                    Intent i = new Intent(MainActivity.this, ThirdActivity.class);
                     startActivity(i);
                 }
             }
