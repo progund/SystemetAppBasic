@@ -45,6 +45,26 @@ public class SecondActivity extends AppCompatActivity {
   private static final String NAME = "name";
 
 
+  private void createFakedProducts() {
+    products = new ArrayList<>();
+    Product p1 = new Product.Builder()
+        .alcohol(4.4)
+        .name("Pilsner Urquell")
+        .nr(1234)
+        .productGroup("Öl")
+        .type("Öl")
+        .volume(330).build();
+    Product p2 = new Product.Builder()
+        .alcohol(4.4)
+        .name("Baron Trenk")
+        .nr(1234)
+        .productGroup("Öl")
+        .type("Öl")
+        .volume(330).build();
+    products.add(p1);
+    products.add(p2);
+  }
+
 
   private void setupListView() {
     // look up a reference to the ListView object
@@ -219,4 +239,16 @@ public class SecondActivity extends AppCompatActivity {
     return productList;
   }
 
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.second_activity);
+
+    // set up faked products
+    createFakedProducts();
+
+
+    // setup listview (and friends)
+    setupListView();
+  }
 }
