@@ -42,16 +42,5 @@
     android:layout_marginRight="4dp"
     android:layout_marginBottom="4dp"
     android:hint="maximum price, e g 19" />
-  <!-- had to set the type_input invisible here because somehow I could not see Type: Cider etc in any other way. -->
-  <EditText
-      android:id="@+id/type_input"
-      android:inputType="text"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="16dp"
-      android:layout_marginLeft="4dp"
-      android:layout_marginRight="4dp"
-      android:layout_marginBottom="4dp"
-      android:visibility="gone"
-      android:hint="Type, e g öl" />
+
 </LinearLayout>

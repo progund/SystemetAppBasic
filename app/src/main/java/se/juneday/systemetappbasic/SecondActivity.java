@@ -155,6 +155,8 @@ public class SecondActivity extends AppCompatActivity {
         addToMap(arguments, MAX_PRICE, valueFromView(viewInflated, R.id.max_price_input));
 
 
+
+
         // Given the map, s earch for products and update the listview
         searchProducts(arguments);
       }
