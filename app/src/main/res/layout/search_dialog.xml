@@ -42,4 +42,5 @@
     android:layout_marginRight="4dp"
     android:layout_marginBottom="4dp"
     android:hint="maximum price, e g 19" />
+
 </LinearLayout>
