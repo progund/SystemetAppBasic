@@ -153,6 +153,7 @@ public class SecondActivity extends AppCompatActivity {
         addToMap(arguments, MAX_ALCO, valueFromView(viewInflated, R.id.max_alco_input));
         addToMap(arguments, MIN_PRICE, valueFromView(viewInflated, R.id.min_price_input));
         addToMap(arguments, MAX_PRICE, valueFromView(viewInflated, R.id.max_price_input));
+        addToMap(arguments, NAME, valueFromView(viewInflated, R.id.name_input));
 
 
 
