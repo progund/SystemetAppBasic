@@ -128,8 +128,15 @@ public class SecondActivity extends AppCompatActivity {
   // if the value is valid, add it to the map
   private void addToMap(Map<String, String> map, String key, String value) {
     if (value!=null && !value.equals("")) {
-      map.put(key, value);
+      // this finds the value Pilsner, even if the user typed pilsner
+      // however, it does not find the values that actually include "pilsner" with small letters
+      // looks like this has to be changed somewhere before
+      // map.put(key, value);
+      map.put(key, value.substring(0,1).toUpperCase() + value.substring(1));
+
+
     }
+
   }
 
   private void showSearchDialog() {
@@ -153,7 +160,10 @@ public class SecondActivity extends AppCompatActivity {
         addToMap(arguments, MAX_ALCO, valueFromView(viewInflated, R.id.max_alco_input));
         addToMap(arguments, MIN_PRICE, valueFromView(viewInflated, R.id.min_price_input));
         addToMap(arguments, MAX_PRICE, valueFromView(viewInflated, R.id.max_price_input));
+
+
         addToMap(arguments, NAME, valueFromView(viewInflated, R.id.name_input));
+
 
 
 
@@ -224,6 +234,7 @@ public class SecondActivity extends AppCompatActivity {
     for (int i = 0; i < array.length(); i++) {
       try {
         JSONObject row = array.getJSONObject(i);
+
         String name = row.getString("name");
         double alcohol = row.getDouble("alcohol");
         double price = row.getDouble("price");
