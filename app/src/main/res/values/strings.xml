@@ -1,3 +1,45 @@
 <resources>
   <string name="app_name">Liquor Store App </string>
+
+  <!-- MainActivity strings start  -->
+  <string name="thanksToast">Thank you</string>
+  <!-- MainActivity strings end  -->
+
+  <!-- activity_main.xml strings start  -->
+  <string name="App_info">This app contains information about alcoholic beverages for visit this app you must be over 20 years old</string>
+  <string name="over20_button">Yes, I am over 20 or older</string>
+  <string name="under20_button">I am not old enough</string>
+  <string name="submit_button">Submit</string>
+  <string name="question_text">Do you like this app?</string>
+  <!-- activity_main.xml strings end  -->
+
+  <!-- SecondActivity strings start  -->
+  <string name="searchTitle">Search products</string>
+  <!-- SecondActivity strings end  -->
+
+  <!-- search_dialog.xml strings start  -->
+  <string name="min_alco_hint">minimum alcohol, eg 4.0</string>
+  <string name="max_alco_hint">maximum alcohol, e g 5.0</string>
+  <string name="min_price_hint">minimum price, e g 12</string>
+  <string name="max_price_hint">maximum price, e g 19</string>
+  <string name="name_hint">the name must start with a capital letter</string>
+  <!-- search_dialog.xml strings end  -->
+
+  <!-- ThirdActivity strings start  -->
+  <!-- ThirdActivity strings end  -->
+
+  <!-- third_activity.xml strings start  -->
+  <string name="disregard_text">It is obvious that you are way too young when you can\'t even lie</string>
+  <string name="go_back_button">Go back? And try again?</string>
+  <!-- third_activity.xml strings end  -->
+
+  <!-- ProductActivity strings start  -->
+  <string name="name">Name</string>
+  <string name="volume">Volume</string>
+  <string name="alcohol">Alcohol</string>
+  <string name="price">Price</string>
+  <string name="productGroup">Product Group</string>
+  <!-- ProductActivity strings end  -->
+
+
 </resources>

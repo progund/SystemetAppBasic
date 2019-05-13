@@ -31,11 +31,11 @@ public class ProductActivity extends AppCompatActivity {
     }
 
     private void displayProduct(Product product) {
-      setViewText(R.id.product_name, "Name", product.name());
-      setViewText(R.id.product_volume, "Volume", String.valueOf(product.volume()));
-      setViewText(R.id.product_alcohol, "Alcohol", String.valueOf(product.alcohol()));
-      setViewText(R.id.product_price, "Price", String.valueOf(product.price()));
-      setViewText(R.id.product_group, "Product Group", String.valueOf(product.productGroup()));
+      setViewText(R.id.product_name, getString(R.string.name), product.name());
+      setViewText(R.id.product_volume, getString(R.string.volume), String.valueOf(product.volume()));
+      setViewText(R.id.product_alcohol, getString(R.string.alcohol), String.valueOf(product.alcohol()));
+      setViewText(R.id.product_price, getString(R.string.price), String.valueOf(product.price()));
+      setViewText(R.id.product_group, getString(R.string.productGroup), String.valueOf(product.productGroup()));
     }
 
   }
