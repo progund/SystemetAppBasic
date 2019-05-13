@@ -11,7 +11,7 @@
     android:layout_marginLeft="4dp"
     android:layout_marginRight="4dp"
     android:layout_marginBottom="4dp"
-    android:hint="minimum alcohol, eg 4.0" />
+    android:hint="@string/min_alco_hint" />
   <EditText
     android:id="@+id/max_alco_input"
     android:inputType="numberDecimal"
@@ -21,7 +21,7 @@
     android:layout_marginLeft="4dp"
     android:layout_marginRight="4dp"
     android:layout_marginBottom="4dp"
-    android:hint="maximum alcohol, e g 5.0" />
+    android:hint="@string/max_alco_hint" />
   <EditText
     android:id="@+id/min_price_input"
     android:inputType="numberDecimal"
@@ -31,7 +31,7 @@
     android:layout_marginLeft="4dp"
     android:layout_marginRight="4dp"
     android:layout_marginBottom="4dp"
-    android:hint="minimum price, e g 12" />
+    android:hint="@string/min_price_hint" />
   <EditText
     android:id="@+id/max_price_input"
     android:inputType="numberDecimal"
@@ -41,7 +41,7 @@
     android:layout_marginLeft="4dp"
     android:layout_marginRight="4dp"
     android:layout_marginBottom="4dp"
-    android:hint="maximum price, e g 19" />
+    android:hint="@string/max_price_hint" />
   <EditText
       android:id="@+id/name_input"
       android:inputType="text"
@@ -51,6 +51,6 @@
       android:layout_marginLeft="4dp"
       android:layout_marginRight="4dp"
       android:layout_marginBottom="4dp"
-      android:hint="name, e g Mariestads. The name must start with a capital letter" />
+      android:hint="@string/name_hint" />
 
 </LinearLayout>
