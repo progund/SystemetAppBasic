@@ -14,14 +14,15 @@ public class ProductActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-      super.onCreate(savedInstanceState);
-      setContentView(R.layout.product_activity);
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.product_activity);
 
-      // extract the Product pass in the bundle
-      Bundle extras = getIntent().getExtras();
-      Product p = (Product) extras.get("product");
-      // display the product
-      displayProduct(p);
+        // extract the Product pass in the bundle
+        Bundle extras = getIntent().getExtras();
+        Product p = (Product) extras.get("product");
+        // display the product
+            displayProduct(p);
+
     }
 
     private void setViewText(int viewId, String label, String text) {

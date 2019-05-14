@@ -15,6 +15,7 @@
 
   <!-- SecondActivity strings start  -->
   <string name="searchTitle">Search products</string>
+  <string name="error_wrong_search_input">Wrong input. Please try again</string>
   <!-- SecondActivity strings end  -->
 
   <!-- search_dialog.xml strings start  -->
