@@ -15,6 +15,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
+
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -32,7 +34,7 @@ import se.juneday.systemetappbasic.domain.Product;
 
 public class SecondActivity extends AppCompatActivity {
 
-  private static final String LOG_TAG = MainActivity.class.getSimpleName();
+  private static final String LOG_TAG = SecondActivity.class.getSimpleName();
   private List<Product> products;
   private ListView listView;
   private ArrayAdapter<Product> adapter;
@@ -199,7 +201,15 @@ public class SecondActivity extends AppCompatActivity {
 
       @Override
       public void onErrorResponse(VolleyError error) {
-        Log.d(LOG_TAG, " cause: " + error.getCause().getMessage());
+        // took this line away because getMessage() caused NullPointerException
+        //Log.d(LOG_TAG, " cause: " + error.getCause().getMessage());
+        Log.d(LOG_TAG, " cause: " + error.getCause());
+        // clear the array that was there before (if the user had searched something else before
+        // notify the adapter that it should clear the data that was there before in case of wrong input
+        products.clear();
+        adapter.notifyDataSetChanged();
+        // display an error message if the input was wrong
+        Toast.makeText(SecondActivity.this, getString(R.string.error_wrong_search_input), Toast.LENGTH_SHORT).show();
       }
     });
 
