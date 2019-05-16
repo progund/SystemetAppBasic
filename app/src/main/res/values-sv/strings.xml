@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">"Liquor Store App "</string>
+    <string name="App_info">Den här appen innehåller information om alkohol. Du måste vara över 20 för att använda söktjän</string>
+    <string name="alcohol">Alkohol</string>
+    <string name="over20_button">Ja, jag är över 20</string>
+    <string name="under20_button">Nej, jag är under 20</string>
+    <string name="thanksToast">Tack</string>
+    <string name="question_text">Gillar du vår app?</string>
+    <string name="searchTitle">Söka produkter</string>
+    <string name="submit_button">Lämna in</string>
+    <string name="disregard_text">Det är uppenbart att du är för ung om du kan inte ens ljuga</string>
+</resources>
