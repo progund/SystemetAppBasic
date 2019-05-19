@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // please load language after super and before setContentView
+        // load language after super and before setContentView
         loadLanguage();
         setContentView(R.layout.activity_main);
         onButtonClickListener();
@@ -46,9 +46,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void saveLanguage(String lang) {
-
-
         // we can use this method to save language
+        // SharedPreferences are used to store data (as key-value pair) about which language the user chose
+        // when he/she accessed the app last time
         SharedPreferences preferences = getSharedPreferences(FILE_NAME, MODE_PRIVATE);
         SharedPreferences.Editor editor = preferences.edit();
         editor.putString(KEY_LANG, lang);
@@ -61,26 +61,29 @@ public class MainActivity extends AppCompatActivity {
 
     }
     private void loadLanguage() {
-        // we can use this method to load language,
+        // a method to load language
         // this method should be called before setContentView() method of the onCreate method
-
+        // language preference data comes from a tutorial
         Locale locale = new Locale(getLangCode());
         Locale.setDefault(locale);
         Configuration config = new Configuration();
         config.locale = locale;
         getResources().updateConfiguration(config, getResources().getDisplayMetrics());
     }
+    // the method is used to get the language code (default value is "en" as in English
     private String getLangCode() {
         SharedPreferences preferences = getSharedPreferences(FILE_NAME, MODE_PRIVATE);
         String langCode = preferences.getString(KEY_LANG, "en");
         // save english 'en' as the default language
         return langCode;
     }
+    // for creating a visible menu in the Activity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.language_menu, menu);
         return true;
     }
+    // depending on which option of the menu is selected, call saveLanguage method with the chosen language
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
