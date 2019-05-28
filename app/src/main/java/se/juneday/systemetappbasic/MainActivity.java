@@ -9,8 +9,8 @@ import android.widget.RatingBar;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    private Button Button2;
-    private Button button1;
+    private Button Over20;
+    private Button Under20;
     private Button buttonsubmit;
     private RatingBar rating_b;
 
@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
         onButtonClickListener();
 
 
-        Button2 = (Button) findViewById(R.id.button2);
-        button1 = (Button) findViewById(R.id.button1);
+        Over20 = (Button) findViewById(R.id.button2);
+        Under20 = (Button) findViewById(R.id.button1);
         rating_b =(RatingBar) findViewById(R.id.ratingbar);
 
     }
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void addListenerOnButton(){
-        Button2.setOnClickListener(new View.OnClickListener() {
+        Over20.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (((Button) v).isClickable()) {
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        button1.setOnClickListener(new View.OnClickListener() {
+        Under20.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (((Button) v).isClickable()) {

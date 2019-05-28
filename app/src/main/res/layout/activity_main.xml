@@ -21,6 +21,22 @@
       app:layout_constraintVertical_bias="0.443" />
 
   <Button
+      android:id="@+id/button1"
+      android:layout_width="160dp"
+      android:layout_height="46dp"
+      android:background="@color/colorPrimary"
+      android:text="@string/under20_button"
+      android:textAlignment="center"
+      android:textSize="14sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintHorizontal_bias="0.892"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.645" />
+
+  <Button
       android:id="@+id/button2"
       android:layout_width="160dp"
       android:layout_height="46dp"
@@ -31,22 +47,6 @@
       android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintHorizontal_bias="0.103"
-      app:layout_constraintLeft_toLeftOf="parent"
-      app:layout_constraintRight_toRightOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.645" />
-
-  <Button
-      android:id="@+id/button1"
-      android:layout_width="160dp"
-      android:layout_height="46dp"
-      android:background="@color/colorPrimary"
-      android:text="@string/under20_button"
-      android:textAlignment="center"
-      android:textSize="14sp"
-      android:textStyle="bold"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintHorizontal_bias="0.828"
       app:layout_constraintLeft_toLeftOf="parent"
       app:layout_constraintRight_toRightOf="parent"
       app:layout_constraintTop_toTopOf="parent"
@@ -100,11 +100,11 @@
       app:layout_constraintLeft_toLeftOf="parent"
       app:layout_constraintRight_toRightOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.799" />
-
+      app:layout_constraintVertical_bias="0.799" /><![CDATA[
 
 
   />
 
 
+]]>
 </android.support.constraint.ConstraintLayout>
