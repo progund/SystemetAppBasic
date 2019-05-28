@@ -4,7 +4,7 @@
 
   <item
     android:id="@+id/action_search"
-    android:title="Search">
+    android:title="@string/search_actionbar">
   </item>
 
   <item
